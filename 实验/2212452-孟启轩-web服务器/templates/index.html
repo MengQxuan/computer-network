@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+</head>
+
+<body>
+    <h1>个人信息</h1>
+    <p>学校：南开大学</p>
+    <p>专业：计算机科学与技术</p>
+    <p>学号：2212452</p>
+    <p>姓名：孟启轩</p>
+    <h2>个人LOGO</h2>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="个人LOGO" width="300">
+    <h2>自我介绍音频</h2>
+    <audio controls>
+        <source src="{{ url_for('static', filename='introduction.mp3') }}" type="audio/mpeg">
+        您的浏览器不支持音频标签。
+    </audio>
+</body>
+
+</html>
